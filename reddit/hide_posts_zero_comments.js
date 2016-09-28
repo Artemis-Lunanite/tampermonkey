@@ -8,6 +8,8 @@
 // @exclude      https://www.reddit.com/r/*/comments/*
 // @grant        none
 // @require http://code.jquery.com/jquery-latest.js
+// @downloadUrl  https://github.com/CrunchyHotDogs/tampermonkey/blob/master/reddit/hide_posts_zero_comments.js
+// @updateUrl	 https://github.com/CrunchyHotDogs/tampermonkey/blob/master/reddit/hide_posts_zero_comments.js
 // ==/UserScript==
 
 (function() {
