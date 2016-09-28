@@ -7,8 +7,8 @@
 // @match        https://m.reddit.com/*
 // @match        https://i.reddit.com/*
 // @grant        none
-// @downloadUrl  https://github.com/CrunchyHotDogs/tampermonkey/blob/master/reddit/anti_mobile.js
-// @updateUrl	 https://github.com/CrunchyHotDogs/tampermonkey/blob/master/reddit/anti_mobile.js
+// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/reddit/anti_mobile.js
+// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/reddit/anti_mobile.js
 // ==/UserScript==
 
 (function() {
