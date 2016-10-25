@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Reddit Hide Comments
+// @name         Reddit Hide Posts No Comments
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Hides posts with 0 comments.
