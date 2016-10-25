@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit Hide Comments
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      1.0
 // @description  Hides posts with 0 comments.
 // @author       CrunchyHotDogs
 // @match        https://www.reddit.com/r/*
@@ -25,4 +25,6 @@
         });
     }
     hideComments();
+    
+    //Testing tampermonkey update functionality.
 })();
