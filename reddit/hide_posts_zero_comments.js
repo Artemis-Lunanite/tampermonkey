@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit Hide Posts No Comments
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Hides posts with 0 comments.
 // @author       CrunchyHotDogs
 // @match        https://www.reddit.com/r/*
