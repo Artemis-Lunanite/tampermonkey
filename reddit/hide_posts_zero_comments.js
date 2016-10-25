@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Reddit Hide Comments
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Hides posts with 0 comments.
 // @author       CrunchyHotDogs
 // @match        https://www.reddit.com/r/*
 // @exclude      https://www.reddit.com/r/*/comments/*
+// @exclude      https://www.reddit.com/r/*/submit
 // @grant        none
 // @require http://code.jquery.com/jquery-latest.js
 // @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/reddit/hide_posts_zero_comments.js
