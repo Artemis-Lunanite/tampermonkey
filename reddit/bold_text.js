@@ -6,7 +6,7 @@
 // @author       CrunchyHotDogs
 // @match        https://www.reddit.com/r/*/comments/*
 // @grant        none
-// @require http://code.jquery.com/jquery-latest.js
+// @require      http://code.jquery.com/jquery-latest.js
 // @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/reddit/bold_text.js
 // @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/reddit/bold_text.js
 // ==/UserScript==
