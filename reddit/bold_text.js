@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit Bold Post Text
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  Bolds the text of a reddit post..
 // @author       CrunchyHotDogs
 // @match        https://www.reddit.com/r/*/comments/*
