@@ -7,8 +7,8 @@
 // @match        http://xdcc.horriblesubs.info/
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc_horriblesubs/change_background.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc_horriblesubs/change_background.js
+// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/change_background.js
+// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/change_background.js
 // ==/UserScript==
 
 (function() {
