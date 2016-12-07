@@ -27,5 +27,5 @@
 	var r = confirm('Hide posts with zero comments');
     if (r) {
 		hideComments();
-	{
+    }
 })();
