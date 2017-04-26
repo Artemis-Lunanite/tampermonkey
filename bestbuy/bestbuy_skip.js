@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BestBuy Sweepstake Skip
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Once you enter your BestBuy codes on the receipt skip the rest of the survey.
 // @author       CrunchyHotDogs
 // @match        https://survey.confirmit.com/wix/0/*
@@ -151,7 +151,7 @@
         rewardZoneRadio.checked = true;
         genderRadio.checked = true;
         ageSelect.value = '9999';
-        //forwardBut.click();
+        forwardBut.click();
     }
     function goForwardPageThirteen() {
         sessionStorage.pageThirteen = 'Y';
@@ -171,7 +171,7 @@
         var phoneText = document.getElementById('comSWP2_phone');
         var emailText = document.getElementById('comSWP2_email');
         var forwardBut = document.getElementById('forwardbutton');
-        sweepstakeRadio.checked = true;
+        sweepstakeRadio.click();
         firstText.text = sessionStorage.first;
         lastText.text = sessionStorage.last;
         addressText.text = sessionStorage.address;
