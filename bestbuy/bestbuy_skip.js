@@ -25,7 +25,7 @@
         sessionStorage.appartment = prompt("Enter your appartment number (if applicable).");
         sessionStorage.city = prompt("Enter your city.");
         sessionStorage.province = prompt("Enter your province.");
-        sessionStorage.postal = prompt("Enter your postal code (X0X-0X0.");
+        sessionStorage.postal = prompt("Enter your postal code (X0X-0X0).");
         sessionStorage.phone = prompt("Enter your phone number (000-000-0000).");
         sessionStorage.email = prompt("Enter your email.");
 
@@ -160,7 +160,7 @@
     }
     function goForwardPageFourteen() {
         sessionStorage.pageFourteen = 'Y';
-        var sweepstakeRadio = document.getElementById('Sweeps_Participant_1');
+        var sweepstakeRadio = document.getElementById('Sweeps_Participant_1_label');
         var firstText = document.getElementById('comSWP2_firstname');
         var lastText = document.getElementById('comSWP2_lastname');
         var addressText = document.getElementById('comSWP2_add1');
