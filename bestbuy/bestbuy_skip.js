@@ -14,21 +14,22 @@
 (function() {
     'use strict';
     /*VARIABLES*/
-
+    personalDetails = false;
     sessionStorage.starting = (sessionStorage.getItem('starting') === null) ? 'N' : 'Y';
 
     function createSessionVar() {
-        alert('None of the information you enter will be stored after your session.');
-        sessionStorage.firstName = prompt("Enter your first name.");
-        sessionStorage.lastName = prompt("Enter your last name.");
-        sessionStorage.address = prompt("Enter your address.");
-        sessionStorage.appartment = prompt("Enter your appartment number (if applicable).");
-        sessionStorage.city = prompt("Enter your city.");
-        sessionStorage.province = prompt("Enter your province.");
-        sessionStorage.postal = prompt("Enter your postal code (X0X-0X0).");
-        sessionStorage.phone = prompt("Enter your phone number (000-000-0000).");
-        sessionStorage.email = prompt("Enter your email.");
-
+        if (personalDetails) {
+            alert('None of the information you enter will be stored after your session.');
+            sessionStorage.firstName = prompt("Enter your first name.");
+            sessionStorage.lastName = prompt("Enter your last name.");
+            sessionStorage.address = prompt("Enter your address.");
+            sessionStorage.appartment = prompt("Enter your appartment number (if applicable).");
+            sessionStorage.city = prompt("Enter your city.");
+            sessionStorage.province = prompt("Enter your province.");
+            sessionStorage.postal = prompt("Enter your postal code (X0X-0X0).");
+            sessionStorage.phone = prompt("Enter your phone number (000-000-0000).");
+            sessionStorage.email = prompt("Enter your email.");
+        }
         sessionStorage.groupA = prompt("Enter the Group A number.");
         sessionStorage.groupB = prompt("Enter the Group B number.");
         sessionStorage.groupC = prompt("Enter the Group C number.");
