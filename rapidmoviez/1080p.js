@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RMZ 1080p
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Hides all releases from rmz.cr that are not 1080p.
 // @author       CrunchyHotDogs
 // @match        *://rmz.cr/*
@@ -16,12 +16,21 @@
         var ep = $('#episodes li');
 		ep.each(function(i, div) {
             var li = $(this);
-			var item = li.find('a');
+			var item = li.find('a').text();
             
-	if (item.text().indexOf('1080p') < 0) {
+			if (search(item,'1080p') && search(item,'HEVC')) {
                 li.hide();
             }
         });
     }
+
+	function search(text, searchTerm) {
+		if (text.indexOf(searchTerm) >= 0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
     save1080p();
 })();
