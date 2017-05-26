@@ -17,7 +17,7 @@
 		ep.each(function(i, div) {
             var li = $(this);
 			var item = li.find('a');
-            console.log(item.text);
+            console.log(item.text());
             //if (item.text.indexOf('1080p') >= 0) {
             //    li.hide();
             //}
