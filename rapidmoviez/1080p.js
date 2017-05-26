@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RMZ 1080p
 // @namespace    http://tampermonkey.net/
-// @version      1.134
+// @version      1.14
 // @description  Hides all releases from rmz.cr that are not 1080p.
 // @author       CrunchyHotDogs
 // @match        *://rmz.cr/*
