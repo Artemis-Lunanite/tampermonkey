@@ -18,9 +18,9 @@
             var li = $(this);
 			var item = li.find('a');
             console.log(item.text);
-            if (item.text.indexOf('1080p') >= 0) {
-                li.hide();
-            }
+            //if (item.text.indexOf('1080p') >= 0) {
+            //    li.hide();
+            //}
         });
     }
     save1080p();
