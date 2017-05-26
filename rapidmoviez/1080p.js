@@ -18,7 +18,7 @@
             var li = $(this);
 			var item = li.find('a');
             
-	if (item.text().indexOf('1080p') >= 0) {
+	if (item.text().indexOf('1080p') < 0) {
                 li.hide();
             }
         });
