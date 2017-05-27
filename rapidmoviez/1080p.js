@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RMZ 1080p
 // @namespace    http://tampermonkey.net/
-// @version      1.375
+// @version      1.376
 // @description  Hides all releases from rmz.cr that are not 1080p.
 // @author       CrunchyHotDogs
 // @match        *://rmz.cr/*
@@ -17,7 +17,7 @@
 		ep.each(function(i, div) {
             var li = $(this);
 			var item = li.find('a').text();
-            console.log(i + search(item,'1080p') + '_' + search(item,'HEVC'));
+            console.log(i + search(item,'1080p'));
 			if (search(item,'1080p') && search(item,'HEVC')) {
                 //li.hide();
             }
