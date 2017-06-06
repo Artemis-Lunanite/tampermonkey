@@ -14,7 +14,7 @@
 (function() {
     'use strict';
     /*VARIABLES*/
-    personalDetails = false;
+    var personalDetails = false;
     sessionStorage.starting = (sessionStorage.getItem('starting') === null) ? 'N' : 'Y';
 
     function createSessionVar() {
