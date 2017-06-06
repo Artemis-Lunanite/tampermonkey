@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BestBuy Sweepstake Skip
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Once you enter your BestBuy codes on the receipt skip the rest of the survey.
 // @author       CrunchyHotDogs
 // @match        https://survey.confirmit.com/wix/0/*
