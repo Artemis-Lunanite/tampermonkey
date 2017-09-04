@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         RMZ 1080p
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  Hides all releases from rmz.cr that are not 1080p.
 // @author       CrunchyHotDogs
 // @match        *://rmz.cr/*
+// @match        *://rapidmoviez.unblocked.bid/*
 // @grant        none
 // @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/rapidmoviez/1080p.js
 // @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/rapidmoviez/1080p.js
