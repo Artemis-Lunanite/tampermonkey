@@ -13,7 +13,6 @@
 (function() {
     'use strict';
     function createButton() {
-		console.log(window.location.href);
 		var inserted = false;
         var statusMenu = $('#status-menu').children();
 		statusMenu = statusMenu.children();
