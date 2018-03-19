@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DC Desire2Learn Add Email
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.25
 // @description  Adds a button to DC D2L that takes the user to their DC mail.
 // @author       CrunchyHotDogs
 // @match        https://durhamcollege.desire2learn.com/*
@@ -12,7 +12,7 @@
 
 (function() {
 	var email = 'https://outlook.office.com/owa/?realm=dcmail.ca&vd=www';
-	var html = '<div style="display: inline-block; vertical-align: middle; padding-right: 20px; color: #CEE6DF;"><a href="' + email + '" target="_blank" style="color: white; font-size: 1.05em; font-weight: bold;">Go To Email</a></div>';
+	var html = '<div style="display: inline-block; vertical-align: middle; padding-right: 20px;"><a href="' + email + '" target="_blank" style="color: #CEE6DF; font-size: 1.05em; font-weight: bold;">Go To Email</a></div>';
 
     'use strict';
     function addButton() {
