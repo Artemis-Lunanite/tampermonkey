@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DC Desire2Learn Add Email
 // @namespace    http://tampermonkey.net/
-// @version      1.30
+// @version      1.3.0
 // @description  Adds a button to DC D2L that takes the user to their DC mail.
 // @author       CrunchyHotDogs
 // @match        https://durhamcollege.desire2learn.com/*
