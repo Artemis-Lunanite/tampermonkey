@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         DC Desire2Learn Add Email
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.30
 // @description  Adds a button to DC D2L that takes the user to their DC mail.
 // @author       CrunchyHotDogs
 // @match        https://durhamcollege.desire2learn.com/*
 // @grant        none
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/dc_d2l/add_email_button.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/dc_d2l/add_email_button.js
+// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/dc_d2l/add_buttons.js
+// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/dc_d2l/add_buttons.js
 // ==/UserScript==
 
 (function() {
