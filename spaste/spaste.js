@@ -7,8 +7,8 @@
 // @match        http://www.spaste.com/p/*
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/change_background.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/change_background.js
+// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/spaste/spaste.js
+// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/spaste/spaste.js
 // ==/UserScript==
 
 (function() {
