@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SPaste Kill Inline CSS
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Removes the retarded inline CSS.
 // @author       CrunchyHotDogs
 // @match        http://www.spaste.com/p/*
@@ -16,6 +16,6 @@
 	var inputs = document.getElementsByTagName('a');
 
 	for(var i = 0; i < inputs.length; i++) {
-		i.style.removeProperty('color');
+		inputs[i].style.removeProperty('color');
 	}
 })();
