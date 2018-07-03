@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Change Background
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
