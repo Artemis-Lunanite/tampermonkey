@@ -4,7 +4,7 @@
 // @version      1.1
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
-// @match        http://xdcc.horriblesubs.info/
+// @match        *xdcc.horriblesubs.info/
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
 // @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/change_background.js
