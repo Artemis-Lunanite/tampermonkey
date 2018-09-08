@@ -52,10 +52,6 @@ body {
 		border-bottom-left-radius: 4px;
 		border-bottom-right-radius: 4px;
 	}
-	img {
-		width: 30px;
-		height: 30px;
-	}
 }
 
 .kc_hover {
@@ -97,13 +93,15 @@ body {
 		margin: 5px;
 		padding: 5px;
 		border-radius: 5px;
-		width: 30px;
-		height: 30px;
 		
 		&:hover {
 			background-color: #d8e5f2;
 		}
 	}
+}
+.kc_image_size {
+	width: 30px;
+	height: 30px;
 }
 
 .hide {
