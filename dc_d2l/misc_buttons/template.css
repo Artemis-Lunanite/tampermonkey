@@ -91,6 +91,8 @@ body {
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
 .kc_popup_container .kc_menu_button:hover {
   background-color: #d8e5f2;
