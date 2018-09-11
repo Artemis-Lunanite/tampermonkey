@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DC Desire2Learn Add Misc Buttons
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Adds menu in Desire2Learn that contains useful links.
 // @author       CrunchyHotDogs
 // @match        https://durhamcollege.desire2learn.com/*
@@ -48,6 +48,15 @@ GM_addStyle('body{background:#a0a0a0;padding:45px 45px 45px 300px;height:500px}.
 			if ($('#kc_popup').hasClass('hide')) {}
 			else {
 				$('#kc_popup').addClass('hide');
+			}
+		});
+		$(document).keyup(function(e) {
+			if (e.keyCode == 27) {
+				if ($('#kc_popup').hasClass('hide')) {}
+				else {
+					$('#kc_popup').addClass('hide');
+				}
+				return false;
 			}
 		});
 	}
