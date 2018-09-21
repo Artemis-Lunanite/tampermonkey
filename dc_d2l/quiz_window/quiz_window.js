@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DC Desire2Learn Increase Quiz Size
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Adds a fullscreen button on the quiz page.
 // @author       CrunchyHotDogs
 // @match        https://durhamcollege.desire2learn.com/d2l/le/content/123643/viewContent*
@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 
-GM_addStyle('.kc_fullscreenImage{width:30px;height:30px;cursor:pointer;}.kc_iFrame{height:90% !important;position:absolute;top:20px;background:#fff;width:80%;left:10%;padding:10px;border-radius:25px;border:4px solid #000}');
+GM_addStyle('.kc_fullscreenImage{width:30px;height:30px;cursor:pointer;}.kc_iFrame{height:90% !important;position:absolute;top:20px;background:#fff;width:75%;left:12.5%;padding:10px;border-radius:25px;border:4px solid #000}');
 
 // Styles to remove stupid document viewing error.
 GM_addStyle('#outerContainer{ position:initial; }');
