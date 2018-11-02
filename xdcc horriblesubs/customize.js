@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         HorribleSubs Change Background
+// @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
@@ -15,22 +15,26 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 
 (function() {
     'use strict';
-    var animeOne = '<button id="animeOne" class="kc_button">SOA</button>';
-    var animeTwo = '<button id="animeTwo" class="kc_button">Goblin Knight</button>';
+	var searchStrings = ['Sword Art Online - Alicization 720', 'Goblin Slayer 720', 'Zombieland Saga 720'];
+	var buttonText = ['SOA', 'Goblin Slayer', 'Zombieland Saga'];
+	
+	
 
     function addAnimeButtons(callback) {
-        var header = $('#header');
-        header.append('<div class="kc_container">' + animeOne + animeTwo + '</div>');
+		var header = $('#header');
+	    var buttonHtml = '';
+		
+	    for (var i = 0; i < searchStrings.length; i++) {
+			buttonHtml += '<button id="' + i + '" class="kc_button">' + buttonText[i] + '</button>';
+	    }
+        header.append('<div class="kc_container">' + buttonHtml + '</div>');
         callback();
     }
 
     function addOnClickListener() {
-        $('#animeOne').click(function() {
-            document.getElementById('search').value = 'Sword Art Online - Alicization 720';
-            $('input[type="submit"]').click();
-        });
-        $('#animeTwo').click(function() {
-            document.getElementById('search').value = 'Goblin Slayer 720';
+        $('.kc_button').click(function() {
+            var search = searchStrings[parseInt($(this).attr('id'))];
+			document.getElementById('search').value = search;
             $('input[type="submit"]').click();
         });
     }
