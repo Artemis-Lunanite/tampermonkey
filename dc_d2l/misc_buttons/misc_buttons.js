@@ -20,7 +20,7 @@ GM_addStyle('#outerContainer{ position:initial; }');
 
 (function() {
     function addButtons(callback) {
-		var mainDiv = $('.d2l-navigation-s-header-actions');
+		var mainDiv = $('.d2l-navigation-header-right');
 		var lastDiv = mainDiv.children().last();
 		lastDiv.before(GM_getResourceText(('html')));
 		callback();
