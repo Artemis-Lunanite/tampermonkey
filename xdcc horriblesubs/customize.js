@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
@@ -15,17 +15,23 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 
 (function() {
     'use strict';
-	var searchStrings = ['Sword Art Online - Alicization 720', 'Goblin Slayer 720', 'Zombieland Saga 720'];
-	var buttonText = ['SOA', 'Goblin Slayer', 'Zombieland Saga'];
-	
-	
+    var searchOptions = [
+        ['SOA', 'Sword Art Online - Alicization 720'],
+        ['Mob Psycho', 'Mob Psycho 100 II'],
+        ['Love is War', 'Kaguya-sama wa Kokurasetai'],
+        ['Neverland', 'Yakusoku no Neverland'],
+        ['Boogiepop', 'Boogiepop wa Warawanai'],
+        ['Kakegurui', 'Kakeguruixx'],
+        ['Circlet Princess', 'Circlet Princess'],
+        ['W\'z', 'W\'z']];
+
 
     function addAnimeButtons(callback) {
 		var header = $('#header');
 	    var buttonHtml = '';
-		
-	    for (var i = 0; i < searchStrings.length; i++) {
-			buttonHtml += '<button id="' + i + '" class="kc_button">' + buttonText[i] + '</button>';
+
+	    for (var i = 0; i < searchOptions.length; i++) {
+			buttonHtml += '<button id="' + i + '" class="kc_button">' + searchOptions[i][0] + '</button>';
 	    }
         header.append('<div class="kc_container">' + buttonHtml + '</div>');
         callback();
@@ -33,7 +39,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 
     function addOnClickListener() {
         $('.kc_button').click(function() {
-            var search = searchStrings[parseInt($(this).attr('id'))];
+            var search = searchOptions[parseInt($(this).attr('id'))][1];
 			document.getElementById('search').value = search;
             $('input[type="submit"]').click();
         });
