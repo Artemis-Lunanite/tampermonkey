@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.55
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
@@ -17,13 +17,13 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
     'use strict';
     var searchOptions = [
         ['SOA', 'Sword Art Online - Alicization 720'],
-        ['Mob Psycho', 'Mob Psycho 100 II'],
-        ['Love is War', 'Kaguya-sama wa Kokurasetai'],
-        ['Neverland', 'Yakusoku no Neverland'],
-        ['Boogiepop', 'Boogiepop wa Warawanai'],
-        ['Kakegurui', 'Kakeguruixx'],
-        ['Circlet Princess', 'Circlet Princess'],
-        ['W\'z', 'W\'z']];
+        ['Mob Psycho', 'Mob Psycho 100 II 720'],
+        ['Love is War', 'Kaguya-sama wa Kokurasetai 720'],
+        ['Neverland', 'Yakusoku no Neverland 720'],
+        ['Boogiepop', 'Boogiepop wa Warawanai 720'],
+        ['Kakegurui', 'Kakeguruixx 720'],
+        ['Circlet Princess', 'Circlet Princess 720'],
+        ['W\'z', 'W\'z 720']];
 
 
     function addAnimeButtons(callback) {
