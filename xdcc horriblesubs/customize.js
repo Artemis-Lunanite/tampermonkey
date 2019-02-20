@@ -15,14 +15,14 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 
 (function() {
     'use strict';
-    var searchOptions = [
+	var searchOptions = [
         ['SOA', 'Sword Art Online - Alicization 720'],
         ['Mob Psycho', 'Mob Psycho 100 S2 720'],
         ['Love is War', 'Kaguya-sama wa Kokurasetai 720'],
         ['Neverland', 'Yakusoku no Neverland 720'],
         ['Boogiepop', 'Boogiepop wa Warawanai 720'],
-        ['Kakegurui', 'https://nyaa.si/?f=0&c=0_0&q=Kakegurui+xx', true],
-        ['Circlet Princess', 'Circlet Princess 720'],
+        ['Kakegurui', 'https://nyaa.si/?f=0&c=1_2&q=Kakegurui+xx', true],
+        ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true],
         ['W\'z', 'W\'z 720']];
 
 
