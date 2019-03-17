@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Deezer List Tracks
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Creates a list of all the tracks in an album. Useful if Deezloader Remix won't download the album but will download the individual tracks,
 // @author       CrunchyHotDogs
 // @match        https://www.deezer.com/en/album/*
@@ -29,7 +29,7 @@ GM_addStyle('.kc_downloadButton { position: fixed; top: 0; left: 0; color: white
     }
 
     function alertList() {
-        var ep = $('[itemprop="url"]');
+        var ep = $('a[itemprop="url"]');
 		var outputText = '';
         ep.each(function(i, div) {
             var url = $(this).attr('href');
