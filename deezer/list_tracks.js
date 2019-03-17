@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Deezer List Tracks
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Creates a list of all the tracks in an album. Useful if Deezloader Remix won't download the album but will download the individual tracks,
 // @author       CrunchyHotDogs
 // @match        https://www.deezer.com/en/album/*
