@@ -35,6 +35,7 @@ GM_addStyle('.kc_downloadButton { position: fixed; top: 0; left: 0; color: white
             var url = $(this).attr('href');
             outputText += 'https://www.deezer.com/en/' + url + ';';
         });
+	html.slice(0,-1)
         prompt("Seperated List of Songs:", outputText);
     }
     createTMButton(addClick);
