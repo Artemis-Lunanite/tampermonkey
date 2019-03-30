@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.57
+// @version      1.561
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
@@ -19,7 +19,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
         ['Mob Psycho', 'Mob Psycho 100 S2 720'],
 	['OPM', 'One Punch Man S2 720'],
 	['AOT', ''],
-        ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true]
+        ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true]];
 
 
     function addAnimeButtons(callback) {
