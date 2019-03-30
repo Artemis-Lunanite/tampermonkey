@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.56
+// @version      1.57
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       CrunchyHotDogs
 // @match        *xdcc.horriblesubs.info/
@@ -16,14 +16,10 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 (function() {
     'use strict';
 	var searchOptions = [
-        ['SOA', 'Sword Art Online - Alicization 720'],
         ['Mob Psycho', 'Mob Psycho 100 S2 720'],
-        ['Love is War', 'Kaguya-sama wa Kokurasetai 720'],
-        ['Neverland', 'Yakusoku no Neverland 720'],
-        ['Boogiepop', 'Boogiepop wa Warawanai 720'],
-        ['Kakegurui', 'https://nyaa.si/?f=0&c=1_2&q=Kakegurui+xx', true],
-        ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true],
-        ['W\'z', 'W\'z 720']];
+	['OPM', 'One Punch Man S2 720'],
+	['AOT', ''],
+        ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true]
 
 
     function addAnimeButtons(callback) {
