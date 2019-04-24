@@ -3,11 +3,11 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.3
 // @description  Creates a list of all the tracks in an album. Useful if Deezloader Remix won't download the album but will download the individual tracks,
-// @author       CrunchyHotDogs
+// @author       Artemis Lunarly
 // @match        https://www.deezer.com/en/album/*
 // @grant        GM_addStyle
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/deezer/list_tracks.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/deezer/list_tracks.js
+// @downloadUrl  https://raw.githubusercontent.com/artemis-lunarly/tampermonkey/master/deezer/list_tracks.js
+// @updateUrl	 https://raw.githubusercontent.com/artemis-lunarly/tampermonkey/master/deezer/list_tracks.js
 // ==/UserScript==
 
 
@@ -35,7 +35,7 @@ GM_addStyle('.kc_downloadButton { position: fixed; top: 0; left: 0; color: white
             var url = $(this).attr('href');
             outputText += 'https://www.deezer.com/en/' + url + ';';
         });
-	outputText.slice(0,-1)
+	outputText.slice(0,-1);
         prompt("Seperated List of Songs:", outputText);
     }
     createTMButton(addClick);
