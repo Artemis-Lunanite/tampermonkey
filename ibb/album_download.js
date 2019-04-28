@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Downloads a whole IBB album with one click.
-// @author       You
+// @author       Artemis Lunarly
 // @match        https://ibb.co/album/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.0/jszip.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js
