@@ -6,8 +6,8 @@
 // @author       CrunchyHotDogs
 // @match        *https://myanimelist.net/animelist/*
 // @grant        none
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/mal/completed_ordered.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/mal/completed_ordered.js
+// @downloadUrl  https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/mal/completed_ordered.js
+// @updateUrl	 https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/mal/completed_ordered.js
 // ==/UserScript==
 
 (function() {
