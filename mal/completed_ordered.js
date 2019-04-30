@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MAL Add Completed Order Button
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.15
 // @description  CURRENTLY ONLY WORKS WITH MY PROFILE. Creates a button that will show the completed list, but sorted by finished date descending.
 // @author       CrunchyHotDogs
 // @match        *https://myanimelist.net/animelist/*
@@ -18,7 +18,7 @@
 		statusMenu = statusMenu.children();
 		statusMenu.each(function(i, ele) {
 			if ($(this).is('div') && inserted === false) {
-				$('<a href="https://myanimelist.net/animelist/CrunchyHotDogs?order=2&status=2" class="status-button">Completed Ordered</a>').insertBefore(ele);
+				$('<a href="https://myanimelist.net/animelist/Artemis-Lunarly?order=2&status=2" class="status-button">Completed Ordered</a>').insertBefore(ele);
 				inserted = true;
 			}
         });
