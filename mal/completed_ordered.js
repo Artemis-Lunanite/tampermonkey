@@ -3,7 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.15
 // @description  CURRENTLY ONLY WORKS WITH MY PROFILE. Creates a button that will show the completed list, but sorted by finished date descending.
-// @author       CrunchyHotDogs
+// @author       Artemis Lunarly
+// @icon         http://i.imgur.com/b7Fw8oH.png
 // @match        *https://myanimelist.net/animelist/*
 // @grant        none
 // @downloadUrl  https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/mal/completed_ordered.js
