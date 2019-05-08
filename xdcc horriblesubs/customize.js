@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.56114
+// @version      1.56115
 // @description  Changes the background on xdcc.horriblesubs.info.
-// @author       CrunchyHotDogs
+// @author       Artemis Lunarly
 // @match        *xdcc.horriblesubs.info/
 // @grant        GM_addStyle
 // @require      http://code.jquery.com/jquery-latest.js
@@ -17,7 +17,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
     'use strict';
 	var searchOptions = [
         ['OPM', 'One Punch Man S2 720'],
-	['AOT', 'Shingeki no Kyojin S3 720'],
+	['AOT 50', 'Shingeki no Kyojin S3 720'],
 	['Fairy Gone', 'Fairy Gone 720'],
         ['Circlet Princess', 'https://nyaa.si/?f=0&c=1_2&q=Circlet+Princess', true]];
 
