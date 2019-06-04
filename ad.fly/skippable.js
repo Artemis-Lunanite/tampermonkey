@@ -8,6 +8,8 @@
 // @grant        none
 // @require      http://code.jquery.com/jquery-latest.js
 // @run-at       document-start
+// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/ad.fly/skippable.js
+// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/ad.fly/skippable.js
 // ==/UserScript==
 
 (function() {
