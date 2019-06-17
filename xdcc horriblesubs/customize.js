@@ -7,8 +7,8 @@
 // @match        *xdcc.horriblesubs.info/
 // @grant        GM_addStyle
 // @require      http://code.jquery.com/jquery-latest.js
-// @downloadUrl  https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/customize.js
-// @updateUrl	 https://raw.githubusercontent.com/CrunchyHotDogs/tampermonkey/master/xdcc%20horriblesubs/customize.js
+// @downloadUrl  https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/xdcc%20horriblesubs/customize.js
+// @updateUrl	 https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/xdcc%20horriblesubs/customize.js
 // ==/UserScript==
 
 GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-left: 150px; display: inline; verticle-align: middle; } .kc_button{ margin-left: 15px; display: inline; height: 50%; border-radius: 50px; background-color: black; color: white; font-size: 1.25em; }');
