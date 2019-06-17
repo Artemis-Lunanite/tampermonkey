@@ -50,4 +50,4 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 
 	javascript:p.setSkin(3);
     addAnimeButtons(addOnClickListener);
-})();s
+})();
