@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IBB Album Download
 // @namespace    http://tampermonkey.net/
-// @version      1.11
+// @version      1.2
 // @description  Downloads a whole IBB album with one click.
 // @author       You
 // @match        https://ibb.co/album/*
@@ -18,27 +18,24 @@
     'use strict';
     var zip = new JSZip();
 
-    function loadImageIntoZip(url, title) {
-        $.ajaxSetup({async: false});
-        $.get(url, function(imagePage) {
-            var imageUrl = $(imagePage).filter('meta[property="og\:image"]').attr('content');
-            if (imageUrl.indexOf(".jpg") >= 0) title = title + '.jpg';
-            if (imageUrl.indexOf(".png") >= 0) title = title + '.png';
-            zip.file(title, urlToPromise(imageUrl), {binary:true});
-        }, 'html');
-
-    }
-
     function gatherImages() {
-        var listOfImages = $('[data-content="image-link"]');
         var albumName = $('[data-text="album-name"]').first().text();
-
-        var x = listOfImages.length;
-        listOfImages.each(function (i, value) {
-            var url = $(value).attr('href');
-            var title = $(value).text();
-            loadImageIntoZip(url, title);
-            if (i+1 === x) saveZip(albumName);
+        $.ajax({
+            type: "POST",
+            data: {
+                action: "get-album-contents",
+                albumid: window.location.href.substring(window.location.href.lastIndexOf('/') + 1)
+            },
+            cache: !1
+        }).always(function(output) {
+            var images = output.contents;
+            var x = images.length;
+            $.each(images, function(i, value) {
+                var url = value.url;
+                var fileName = value.filename;
+                zip.file(fileName, urlToPromise(url), {binary:true});
+                if (i+1 === x) saveZip(albumName);
+            });
         });
     }
 
