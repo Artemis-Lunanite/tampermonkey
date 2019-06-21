@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         IBB Album Download
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Downloads a whole IBB album with one click.
-// @author       Artemis Lunarly
+// @author       You
 // @match        https://ibb.co/album/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.0/jszip.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js
@@ -21,7 +21,7 @@
     function loadImageIntoZip(url, title) {
         $.ajaxSetup({async: false});
         $.get(url, function(imagePage) {
-            var imageUrl = $(imagePage).find('#embed-code-2').attr('value');
+            var imageUrl = $(imagePage).find('#image-viewer-container').children().attr('src');
             if (imageUrl.indexOf(".jpg") >= 0) title = title + '.jpg';
             if (imageUrl.indexOf(".png") >= 0) title = title + '.png';
             zip.file(title, urlToPromise(imageUrl), {binary:true});
