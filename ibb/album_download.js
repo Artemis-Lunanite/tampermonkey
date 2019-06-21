@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IBB Album Download
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.11
 // @description  Downloads a whole IBB album with one click.
 // @author       You
 // @match        https://ibb.co/album/*
@@ -21,7 +21,7 @@
     function loadImageIntoZip(url, title) {
         $.ajaxSetup({async: false});
         $.get(url, function(imagePage) {
-            var imageUrl = $(imagePage).find('#image-viewer-container').children().attr('src');
+            var imageUrl = $(imagePage).filter('meta[property="og\:image"]').attr('content');
             if (imageUrl.indexOf(".jpg") >= 0) title = title + '.jpg';
             if (imageUrl.indexOf(".png") >= 0) title = title + '.png';
             zip.file(title, urlToPromise(imageUrl), {binary:true});
