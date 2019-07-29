@@ -3,13 +3,13 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @description  Downloads a whole IBB album with one click.
-// @author       Artemis Lunarly
+// @author       Artemis Lunanite
 // @match        https://ibb.co/album/*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.0/jszip.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.min.js
 // @require      https://cdn.jsdelivr.net/npm/file-saver@2.0.1/dist/FileSaver.min.js
-// @downloadUrl  https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/ibb/album_download.js
-// @updateUrl	 https://raw.githubusercontent.com/Artemis-Lunarly/tampermonkey/master/ibb/album_download.js
+// @downloadUrl  https://raw.githubusercontent.com/Artemis-Lunanite/tampermonkey/master/ibb/album_download.js
+// @updateUrl	 https://raw.githubusercontent.com/Artemis-Lunanite/tampermonkey/master/ibb/album_download.js
 // @grant        none
 // ==/UserScript==
 
