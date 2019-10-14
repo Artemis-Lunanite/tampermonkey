@@ -22,7 +22,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 	['Vinland', 'Vinland Saga 720'],
 	['SAO', 'Sword Art Online War of Underworld 720'],
 	['Food Wars', 'Shokugeki no Souma: Shin no Sara 720'],
-	['Fairy Gone', 'Fairy Gone S2 720']];
+	['Fairy Gone', 'Fairy Gone 720']];
 
 
     function addAnimeButtons(callback) {
