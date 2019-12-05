@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MAL Add Completed Order Button
 // @namespace    http://tampermonkey.net/
-// @version      1.15
+// @version      1.16
 // @description  CURRENTLY ONLY WORKS WITH MY PROFILE. Creates a button that will show the completed list, but sorted by finished date descending.
 // @author       Artemis Lunanite
 // @icon         http://i.imgur.com/b7Fw8oH.png
