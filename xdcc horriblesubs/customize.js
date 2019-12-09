@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.56121
+// @version      1.56122
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       Artemis Lunanite
 // @match        *xdcc.horriblesubs.info/
@@ -21,6 +21,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 	['Vinland', 'Vinland Saga 720'],
 	['SAO', 'Sword Art Online War of Underworld 720'],
 	['Food Wars', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Food+Wars%21+S4', true],
+	['No Guns', 'https://nyaa.si/?f=0&c=0_0&q=Judas+no+guns+life', true],
 	['Fairy Gone', 'Fairy Gone 720']];
 
 
