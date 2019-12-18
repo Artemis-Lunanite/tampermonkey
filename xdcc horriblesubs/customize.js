@@ -16,7 +16,6 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 (function() {
     'use strict';
 	var searchOptions = [
-        ['Dr. Stone', 'Dr. Stone 720'],
 	['Fire Force', 'Enen no Shouboutai 720'],
 	['Vinland', 'Vinland Saga 720'],
 	['SAO', 'Sword Art Online War of Underworld 720'],
