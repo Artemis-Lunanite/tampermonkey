@@ -25,7 +25,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 	['Fairy Gone', 'Fairy Gone 720'],
 	['Plunderer', ''],
 	['Darwins', ''],
-	['Dorohedoro', ''];
+	['Dorohedoro', '']];
 
 
     function addAnimeButtons(callback) {
