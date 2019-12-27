@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.56123
+// @version      1.56124
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       Artemis Lunanite
 // @match        *xdcc.horriblesubs.info/
@@ -24,7 +24,8 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 	['Fairy Gone', 'Fairy Gone 720'],
 	['Plunderer', ''],
 	['Darwins', ''],
-	['Dorohedoro', '']];
+	['Dorohedoro', ''],
+	['Madoka Magica', '']];
 
 
     function addAnimeButtons(callback) {
