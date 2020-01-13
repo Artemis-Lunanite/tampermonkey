@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HorribleSubs Customize
 // @namespace    http://tampermonkey.net/
-// @version      1.56125
+// @version      1.56126
 // @description  Changes the background on xdcc.horriblesubs.info.
 // @author       Artemis Lunanite
 // @match        *xdcc.horriblesubs.info/
@@ -20,7 +20,7 @@ GM_addStyle('.header h1 {display: inline !important; } .kc_container{ margin-lef
 	['Darwins', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Darwin%27s+Game', true],
 	['Dorohedoro', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Dorohedoro', true],
 	['Madoka Magica', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Madoka', true],
-	['Nekopara', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Nekopara', true];
+	['Nekopara', 'https://nyaa.si/?f=0&c=0_0&q=%5BJudas%5D+Nekopara', true]];
 
 
     function addAnimeButtons(callback) {
